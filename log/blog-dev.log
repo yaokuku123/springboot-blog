@@ -670,3 +670,293 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2020-08-05 10:47:03.772  INFO 10640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2020-08-05 10:47:04.267  INFO 10640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2020-08-05 10:47:04.271  INFO 10640 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 5.153 seconds (JVM running for 7.448)
+2020-08-05 11:23:17.553  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 3604 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 11:23:17.560 DEBUG 3604 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 11:23:17.561  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 11:23:17.687  INFO 3604 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-05 11:23:17.690  INFO 3604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-05 11:23:17.690  INFO 3604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-05 11:23:18.970  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 11:23:19.008  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2020-08-05 11:23:20.263  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 11:23:20.270  INFO 3604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 11:23:20.270  INFO 3604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 11:23:20.398  INFO 3604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 11:23:20.398  INFO 3604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2707 ms
+2020-08-05 11:23:20.544  INFO 3604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 11:23:20.661  INFO 3604 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-05 11:23:20.757  INFO 3604 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-05 11:23:20.834  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-05 11:23:20.958  INFO 3604 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 11:23:20.962  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-05 11:23:20.976  INFO 3604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 11:23:21.766  INFO 3604 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 11:23:21.774  INFO 3604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:23:21.798  INFO 3604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 11:23:21.885  WARN 3604 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 11:23:22.133  INFO 3604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:23:22.207  INFO 3604 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 11:23:22.742  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 11:23:22.746  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 6.152 seconds (JVM running for 8.757)
+2020-08-05 11:23:28.847  INFO 3604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 11:23:28.847  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 11:23:28.855  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-08-05 11:23:28.939  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:23:28.945  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: admin/index
+2020-08-05 11:23:45.703  INFO 3604 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:23:45.703  INFO 3604 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:23:45.707  INFO 3604 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-05 11:23:45.711  INFO 3604 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-05 11:23:46.361  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 3604 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 11:23:46.361 DEBUG 3604 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 11:23:46.361  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 11:23:46.484  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 11:23:46.486  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-08-05 11:23:46.763  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 11:23:46.765  INFO 3604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 11:23:46.765  INFO 3604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 11:23:46.813  INFO 3604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 11:23:46.813  INFO 3604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 450 ms
+2020-08-05 11:23:46.911  INFO 3604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 11:23:46.920  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-08-05 11:23:46.932  INFO 3604 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 11:23:46.935  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-08-05 11:23:46.936  INFO 3604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 11:23:47.426  INFO 3604 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 11:23:47.426  INFO 3604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:23:47.448  INFO 3604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 11:23:47.535  WARN 3604 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 11:23:47.858  INFO 3604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:23:47.947  INFO 3604 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 11:23:48.473  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 11:23:48.474  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 2.138 seconds (JVM running for 34.485)
+2020-08-05 11:23:48.478  INFO 3604 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-05 11:23:50.124  INFO 3604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 11:23:50.125  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 11:23:50.141  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-08-05 11:23:50.165  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:23:50.174  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: admin/blogs
+2020-08-05 11:24:13.855  INFO 3604 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:24:13.856  INFO 3604 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:24:13.857  INFO 3604 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-08-05 11:24:13.861  INFO 3604 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-08-05 11:24:14.532  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 3604 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 11:24:14.532 DEBUG 3604 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 11:24:14.532  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 11:24:14.667  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 11:24:14.669  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-08-05 11:24:14.871  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 11:24:14.872  INFO 3604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 11:24:14.872  INFO 3604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 11:24:14.895  INFO 3604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 11:24:14.895  INFO 3604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 361 ms
+2020-08-05 11:24:14.941  INFO 3604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 11:24:14.944  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-08-05 11:24:14.949  INFO 3604 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-3 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 11:24:14.950  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-08-05 11:24:14.950  INFO 3604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 11:24:15.298  INFO 3604 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 11:24:15.299  INFO 3604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:24:15.326  INFO 3604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 11:24:15.395  WARN 3604 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 11:24:15.623  INFO 3604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:24:15.693  INFO 3604 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 11:24:16.051  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 11:24:16.051  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 1.545 seconds (JVM running for 62.062)
+2020-08-05 11:24:16.054  INFO 3604 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-05 11:24:19.816  INFO 3604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 11:24:19.817  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 11:24:19.832  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-08-05 11:24:19.842  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:24:19.847  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: admin/input
+2020-08-05 11:24:30.483  INFO 3604 --- [http-nio-8080-exec-9] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:24:30.484  INFO 3604 --- [http-nio-8080-exec-9] com.yqj.aspect.LogAspect                 : result: admin/input
+2020-08-05 11:24:42.254  INFO 3604 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:24:42.254  INFO 3604 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:24:42.255  INFO 3604 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-08-05 11:24:42.258  INFO 3604 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-08-05 11:24:43.372  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 3604 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 11:24:43.372 DEBUG 3604 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 11:24:43.372  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 11:24:43.646  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 11:24:43.650  INFO 3604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 JPA repository interfaces.
+2020-08-05 11:24:43.974  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 11:24:43.975  INFO 3604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 11:24:43.975  INFO 3604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 11:24:44.017  INFO 3604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 11:24:44.017  INFO 3604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 642 ms
+2020-08-05 11:24:44.121  INFO 3604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 11:24:44.129  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-08-05 11:24:44.142  INFO 3604 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-4 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 11:24:44.144  INFO 3604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-08-05 11:24:44.145  INFO 3604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 11:24:44.579  INFO 3604 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 11:24:44.579  INFO 3604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:24:44.605  INFO 3604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 11:24:44.713  WARN 3604 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 11:24:44.942  INFO 3604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:24:45.030  INFO 3604 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 11:24:45.403  INFO 3604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 11:24:45.404  INFO 3604 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 2.078 seconds (JVM running for 91.415)
+2020-08-05 11:24:45.406  INFO 3604 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-05 11:24:49.170  INFO 3604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 11:24:49.171  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 11:24:49.181  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-08-05 11:24:49.189  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:24:49.194  INFO 3604 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: admin/login
+2020-08-05 11:27:58.319  INFO 6212 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 6212 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 11:27:58.322 DEBUG 6212 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 11:27:58.322  INFO 6212 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 11:27:58.377  INFO 6212 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-05 11:27:58.377  INFO 6212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-05 11:27:58.378  INFO 6212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-05 11:27:58.872  INFO 6212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 11:27:58.889  INFO 6212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-08-05 11:27:59.460  INFO 6212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 11:27:59.467  INFO 6212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 11:27:59.467  INFO 6212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 11:27:59.568  INFO 6212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 11:27:59.568  INFO 6212 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1190 ms
+2020-08-05 11:27:59.693  INFO 6212 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 11:27:59.796  INFO 6212 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-05 11:27:59.874  INFO 6212 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-05 11:27:59.941  INFO 6212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-05 11:28:00.052  INFO 6212 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 11:28:00.055  INFO 6212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-05 11:28:00.066  INFO 6212 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 11:28:01.082  INFO 6212 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 11:28:01.094  INFO 6212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:28:01.140  INFO 6212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 11:28:01.294  WARN 6212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 11:28:01.727  INFO 6212 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:28:01.907  INFO 6212 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 11:28:02.538  INFO 6212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 11:28:02.543  INFO 6212 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 4.674 seconds (JVM running for 6.464)
+2020-08-05 11:28:05.975  INFO 6212 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 11:28:05.975  INFO 6212 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 11:28:05.986  INFO 6212 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-08-05 11:28:06.045  INFO 6212 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:28:06.051  INFO 6212 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: admin/input
+2020-08-05 11:29:31.457  INFO 9188 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 9188 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 11:29:31.459 DEBUG 9188 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 11:29:31.459  INFO 9188 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 11:29:31.520  INFO 9188 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-05 11:29:31.521  INFO 9188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-05 11:29:31.521  INFO 9188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-05 11:29:32.000  INFO 9188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 11:29:32.016  INFO 9188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-08-05 11:29:32.568  INFO 9188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 11:29:32.574  INFO 9188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 11:29:32.575  INFO 9188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 11:29:32.694  INFO 9188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 11:29:32.695  INFO 9188 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1174 ms
+2020-08-05 11:29:32.894  INFO 9188 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 11:29:33.089  INFO 9188 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-05 11:29:33.259  INFO 9188 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-05 11:29:33.399  INFO 9188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-05 11:29:33.626  INFO 9188 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 11:29:33.632  INFO 9188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-05 11:29:33.660  INFO 9188 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 11:29:35.118  INFO 9188 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 11:29:35.130  INFO 9188 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 11:29:35.176  INFO 9188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 11:29:35.374  WARN 9188 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 11:29:35.902  INFO 9188 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 11:29:36.040  INFO 9188 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 11:29:36.414  INFO 9188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 11:29:36.416  INFO 9188 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 5.423 seconds (JVM running for 6.626)
+2020-08-05 11:29:37.463  INFO 9188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 11:29:37.463  INFO 9188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 11:29:37.486  INFO 9188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-08-05 11:29:37.603  INFO 9188 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:29:37.611  INFO 9188 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: admin/input
+2020-08-05 11:30:11.053  INFO 9188 --- [http-nio-8080-exec-10] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 11:30:11.053  INFO 9188 --- [http-nio-8080-exec-10] com.yqj.aspect.LogAspect                 : result: admin/input
+2020-08-05 12:52:47.010  INFO 14604 --- [main] com.yqj.test.JpaTest                     : Starting JpaTest on LAPTOP-JUBVGF02 with PID 14604 (started by yorick in D:\study\code\project\blog)
+2020-08-05 12:52:47.012 DEBUG 14604 --- [main] com.yqj.test.JpaTest                     : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 12:52:47.012  INFO 14604 --- [main] com.yqj.test.JpaTest                     : The following profiles are active: dev
+2020-08-05 12:52:47.747  INFO 14604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 12:52:47.871  INFO 14604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 1 JPA repository interfaces.
+2020-08-05 12:52:49.287  INFO 14604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 12:52:49.562  INFO 14604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-05 12:52:49.833  INFO 14604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-05 12:52:50.805  INFO 14604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-05 12:52:50.967  INFO 14604 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 12:52:50.971  INFO 14604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-05 12:52:50.994  INFO 14604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 12:52:51.974  INFO 14604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 12:52:51.980  INFO 14604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 12:52:52.909  WARN 14604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 12:52:53.492  INFO 14604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 12:52:53.700  INFO 14604 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 12:52:54.383  INFO 14604 --- [main] com.yqj.test.JpaTest                     : Started JpaTest in 7.972 seconds (JVM running for 9.436)
+2020-08-05 12:52:55.006  INFO 14604 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 12:52:55.009  INFO 14604 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 12:52:55.013  INFO 14604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-05 12:52:55.023  INFO 14604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-05 12:55:03.701  INFO 1952 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 1952 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 12:55:03.708 DEBUG 1952 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 12:55:03.709  INFO 1952 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 12:55:03.825  INFO 1952 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-05 12:55:03.826  INFO 1952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-05 12:55:03.827  INFO 1952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-05 12:55:04.864  INFO 1952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 12:55:04.958  INFO 1952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 1 JPA repository interfaces.
+2020-08-05 12:55:06.103  INFO 1952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 12:55:06.116  INFO 1952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 12:55:06.116  INFO 1952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 12:55:06.346  INFO 1952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 12:55:06.346  INFO 1952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2515 ms
+2020-08-05 12:55:06.694  INFO 1952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 12:55:06.764  INFO 1952 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-05 12:55:06.841  INFO 1952 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-05 12:55:06.907  INFO 1952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-05 12:55:07.019  INFO 1952 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 12:55:07.022  INFO 1952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-05 12:55:07.034  INFO 1952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 12:55:07.721  INFO 1952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 12:55:07.727  INFO 1952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 12:55:07.747  INFO 1952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 12:55:08.100  WARN 1952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 12:55:08.281  INFO 1952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 12:55:08.350  INFO 1952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 12:55:08.610  INFO 1952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 12:55:08.612  INFO 1952 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 5.742 seconds (JVM running for 6.933)
+2020-08-05 12:55:13.063  INFO 1952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 12:55:13.064  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 12:55:13.116  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 52 ms
+2020-08-05 12:55:13.204  INFO 1952 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 12:55:13.219  INFO 1952 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: admin/input
+2020-08-05 12:59:14.583  INFO 1952 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[]}
+2020-08-05 12:59:14.584  INFO 1952 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : result: admin/input
+2020-08-05 13:00:25.042  INFO 1952 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 13:00:25.042  INFO 1952 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 13:00:25.047  INFO 1952 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-05 13:00:25.052  INFO 1952 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-05 13:00:25.968  INFO 1952 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 1952 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-05 13:00:25.969 DEBUG 1952 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-05 13:00:25.969  INFO 1952 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-05 13:00:26.293  INFO 1952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-05 13:00:26.355  INFO 1952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 1 JPA repository interfaces.
+2020-08-05 13:00:26.704  INFO 1952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 13:00:26.705  INFO 1952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 13:00:26.705  INFO 1952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 13:00:26.749  INFO 1952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-05 13:00:26.750  INFO 1952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 776 ms
+2020-08-05 13:00:26.919  INFO 1952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-05 13:00:26.925  INFO 1952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-08-05 13:00:26.938  INFO 1952 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-05 13:00:26.940  INFO 1952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-08-05 13:00:26.941  INFO 1952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-05 13:00:27.452  INFO 1952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-05 13:00:27.453  INFO 1952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-05 13:00:27.481  INFO 1952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-05 13:00:27.852  WARN 1952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-05 13:00:28.156  INFO 1952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 13:00:28.247  INFO 1952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 13:00:28.784  INFO 1952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-05 13:00:28.786  INFO 1952 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 2.874 seconds (JVM running for 327.108)
+2020-08-05 13:00:28.789  INFO 1952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-05 13:00:33.623  INFO 1952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 13:00:33.625  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 13:00:33.640  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
