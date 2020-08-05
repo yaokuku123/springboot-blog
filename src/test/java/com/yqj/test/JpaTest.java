@@ -25,7 +25,7 @@ public class JpaTest {
     public void test(){
         User user = new User();
         user.setUsername("yorick");
-        user.setPassword("199748");
+        user.setPassword("e348fb9877c58259d1c7b89d3833db32");
         userDao.save(user);
     }
 }

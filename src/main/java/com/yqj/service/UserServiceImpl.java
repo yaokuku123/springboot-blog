@@ -2,6 +2,7 @@ package com.yqj.service;
 
 import com.yqj.dao.UserDao;
 import com.yqj.domain.User;
+import com.yqj.utils.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User checkUser(String username, String password) {
-        User user = userDao.findByUsernameAndPassword(username,password);
+        User user = userDao.findByUsernameAndPassword(username, MD5Utils.code(password));
         return user;
     }
 }
