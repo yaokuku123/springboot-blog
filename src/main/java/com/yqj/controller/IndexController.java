@@ -15,10 +15,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(){
-        String blog = null;
-        if(blog == null){
-            throw new NotFoundException();
-        }
+        System.out.println("---index---");
         return "index";
     }
 }
