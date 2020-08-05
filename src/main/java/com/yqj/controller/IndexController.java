@@ -15,7 +15,10 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(){
-        System.out.println("---index---");
+
         return "index";
     }
+
+
+
 }
