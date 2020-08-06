@@ -2,7 +2,9 @@ package com.yqj.controller.admin;
 
 import com.yqj.domain.Blog;
 import com.yqj.domain.BlogQuery;
+import com.yqj.domain.User;
 import com.yqj.service.BlogService;
+import com.yqj.service.TagService;
 import com.yqj.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -13,6 +15,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * Copyright(C),2019-2020,XXX公司
@@ -30,8 +35,11 @@ public class BlogController {
     @Autowired
     private TypeService typeService;
 
+    @Autowired
+    private TagService tagService;
+
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size =2,sort = "updateTime",direction = Sort.Direction.DESC)
+    public String blogs(@PageableDefault(size =10,sort = "updateTime",direction = Sort.Direction.DESC)
                         Pageable pageable, BlogQuery blog, Model model){
         model.addAttribute("types",typeService.listType());
         model.addAttribute("page",blogService.listBlog(pageable,blog));
@@ -39,9 +47,31 @@ public class BlogController {
     }
 
     @PostMapping("/blogs/search")
-    public String search(@PageableDefault(size =2,sort = "updateTime",direction = Sort.Direction.DESC)
+    public String search(@PageableDefault(size =10,sort = "updateTime",direction = Sort.Direction.DESC)
                                 Pageable pageable, BlogQuery blog,Model model){
         model.addAttribute("page",blogService.listBlog(pageable,blog));
         return "admin/blogs :: blogList";
+    }
+
+    @GetMapping("/blogs/input")
+    public String input(Model model){
+        model.addAttribute("blog",new Blog());
+        model.addAttribute("types",typeService.listType());
+        model.addAttribute("tags",tagService.listTag());
+        return "admin/blogs-input";
+    }
+
+    @PostMapping("/blogs")
+    public String post(Blog blog, RedirectAttributes attributes, HttpSession session){
+        blog.setUser((User) session.getAttribute("user"));
+        blog.setType(typeService.getType(blog.getType().getId()));
+        blog.setTags(tagService.listTag(blog.getTagIds()));
+        Blog b = blogService.saveBlog(blog);
+        if (b == null){
+            attributes.addFlashAttribute("message","操作失败");
+        }else {
+            attributes.addFlashAttribute("message","操作成功");
+        }
+        return "redirect:/admin/blogs";
     }
 }

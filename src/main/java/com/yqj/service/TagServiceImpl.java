@@ -10,6 +10,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Copyright(C),2019-2020,XXX公司
  * FileName: TagServiceImpl
@@ -42,8 +45,32 @@ public class TagServiceImpl implements TagService {
 
     @Transactional
     @Override
-    public Page<Tag> listType(Pageable pageable) {
+    public Page<Tag> listTag(Pageable pageable) {
         return tagDao.findAll(pageable);
+    }
+
+    @Transactional
+    @Override
+    public List<Tag> listTag() {
+        return tagDao.findAll();
+    }
+
+    @Transactional
+    @Override
+    public List<Tag> listTag(String ids) {
+        return tagDao.findAllById(convertToList(ids));
+    }
+
+    //将字符串ids转换为list形式
+    private List<Long> convertToList(String ids){
+        List<Long> list = new ArrayList<>();
+        if(!"".equals(ids) && ids != null){
+            String[] idArray = ids.split(",");
+            for (int i = 0; i < idArray.length; i++) {
+                list.add(new Long(idArray[i]));
+            }
+        }
+        return list;
     }
 
     @Transactional

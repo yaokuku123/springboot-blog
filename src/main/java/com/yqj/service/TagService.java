@@ -5,6 +5,8 @@ import com.yqj.domain.Type;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * Copyright(C),2019-2020,XXX公司
  * FileName: TagService
@@ -22,7 +24,13 @@ public interface TagService {
     Tag getTypeByName(String name);
 
     //分页查询
-    Page<Tag> listType(Pageable pageable);
+    Page<Tag> listTag(Pageable pageable);
+
+    //查询全部
+    List<Tag> listTag();
+
+    //依据一组id字符串查询Tag
+    List<Tag> listTag(String ids);
 
     //改
     Tag updateType(Long id ,Tag tag);
