@@ -217,4 +217,26 @@ public class Blog {
                 ", updateTime=" + updateTime +
                 '}';
     }
+
+    public void init() {
+        this.tagIds = tagsToIds(this.getTags());
+    }
+
+    private String tagsToIds(List<Tag> tags) {
+        if(!tags.isEmpty()){
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags) {
+                if(flag){
+                    ids.append(",");
+                }else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        }else {
+            return tagIds;
+        }
+    }
 }

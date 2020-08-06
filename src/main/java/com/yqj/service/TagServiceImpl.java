@@ -58,7 +58,8 @@ public class TagServiceImpl implements TagService {
     @Transactional
     @Override
     public List<Tag> listTag(String ids) {
-        return tagDao.findAllById(convertToList(ids));
+        List<Long> idsList = convertToList(ids);
+        return tagDao.findAllById(idsList);
     }
 
     //将字符串ids转换为list形式
