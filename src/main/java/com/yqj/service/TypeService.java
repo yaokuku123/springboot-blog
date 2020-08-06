@@ -4,6 +4,8 @@ import com.yqj.domain.Type;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * Copyright(C),2019-2020,XXX公司
  * FileName: TypeService
@@ -22,6 +24,9 @@ public interface TypeService {
 
     //分页查询
     Page<Type> listType(Pageable pageable);
+
+    //查询全部
+    List<Type> listType();
 
     //改
     Type updateType(Long id ,Type type);

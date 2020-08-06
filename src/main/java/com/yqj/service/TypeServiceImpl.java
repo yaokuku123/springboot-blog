@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Copyright(C),2019-2020,XXX公司
  * FileName: TypeServiceImpl
@@ -34,6 +36,7 @@ public class TypeServiceImpl implements TypeService {
         return typeDao.findById(id).get();
     }
 
+    @Transactional
     @Override
     public Type getTypeByName(String name) {
         return typeDao.findByName(name);
@@ -43,6 +46,11 @@ public class TypeServiceImpl implements TypeService {
     @Override
     public Page<Type> listType(Pageable pageable) {
         return typeDao.findAll(pageable);
+    }
+
+    @Override
+    public List<Type> listType() {
+        return typeDao.findAll();
     }
 
     @Transactional

@@ -16,7 +16,8 @@ public class IndexController {
     @GetMapping("/")
     public String index(){
 
-        return "admin/input";
+        int i=1/0;
+        return "admin/login";
     }
 
 
