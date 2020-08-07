@@ -490,6 +490,26 @@ h5,h6{font-size:1em;}
                                         <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${comment.id},data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
                                     </div>
                                 </div>
+                                <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
+                                    <div class="comment" th:each="reply:${comment.replyComments}">
+                                        <a class="avatar">
+                                            <img src="../static/images/head.jpg" th:src="${reply.avatar}">
+                                        </a>
+                                        <div class="content">
+                                            <a class="author">
+                                                <span th:text="${reply.nickname}">Matt</span>
+                                                <span th:text="|@ ${reply.parentComment.nickname}|" class="m-teal">alice</span>
+                                            </a>
+                                            <div class="metadata">
+                                                <span class="date" th:text="${#dates.format(reply.createTime,'yyyy-MM-dd HH:mm')}">今天下午 5:42</span>
+                                            </div>
+                                            <div class="text" th:text="${reply.content}">太赞了！ </div>
+                                            <div class="actions">
+                                                <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}" onclick="reply(this)">回复</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!--/*-->
                             <div class="comment">
@@ -761,6 +781,10 @@ h5,h6{font-size:1em;}
             $("[name='parentComment.id']").val(commentId);
             $(window).scrollTo($("#comment-form"),1000);
         }
+
+        $(function () {
+           $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"");
+        });
     </script>
     </body>
 </html>

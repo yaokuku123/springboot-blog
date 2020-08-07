@@ -15,5 +15,5 @@ import java.util.List;
 public interface CommentDao extends JpaRepository<Comment,Long> {
 
     //根据博客id查询数据
-    List<Comment> findByBlogId(Long blogId, Sort sort);
+    List<Comment> findByBlogIdAndParentCommentNull(Long blogId, Sort sort);
 }
