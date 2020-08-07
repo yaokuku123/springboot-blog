@@ -5,6 +5,7 @@ import com.yqj.domain.Blog;
 import com.yqj.domain.BlogQuery;
 import com.yqj.domain.Type;
 import com.yqj.handler.NotFoundException;
+import com.yqj.utils.MarkdownUtils;
 import com.yqj.utils.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +43,18 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.findById(id).get();
     }
 
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogDao.findById(id).get();
+        if (blog == null) {
+            throw new NotFoundException("博客不存在");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog, b);
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(b.getContent()));
+        return b;
+    }
+
     @Transactional
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
@@ -49,19 +62,19 @@ public class BlogServiceImpl implements BlogService {
             @Override
             public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
                 List<Predicate> predicates = new ArrayList<>();
-                if (!"".equals(blog.getTitle()) && blog.getTitle() != null){
-                    predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
+                if (!"".equals(blog.getTitle()) && blog.getTitle() != null) {
+                    predicates.add(criteriaBuilder.like(root.<String>get("title"), "%" + blog.getTitle() + "%"));
                 }
-                if(blog.getTypeId() != null){
-                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getTypeId()));
+                if (blog.getTypeId() != null) {
+                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"), blog.getTypeId()));
                 }
-                if(blog.isRecommend()){
-                    predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
+                if (blog.isRecommend()) {
+                    predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"), blog.isRecommend()));
                 }
                 query.where(predicates.toArray(new Predicate[predicates.size()]));
                 return null;
             }
-        },pageable);
+        }, pageable);
     }
 
     @Override
@@ -71,13 +84,13 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public Page<Blog> listBlog(Pageable pageable, String query) {
-        return blogDao.findByQuery(query,pageable);
+        return blogDao.findByQuery(query, pageable);
     }
 
     @Override
     public List<Blog> listRecommendBlogTop(Integer size) {
-        Sort sort = Sort.by(Sort.Direction.DESC,"updateTime");
-        Pageable pageable = PageRequest.of(0,size,sort);
+        Sort sort = Sort.by(Sort.Direction.DESC, "updateTime");
+        Pageable pageable = PageRequest.of(0, size, sort);
         return blogDao.findTop(pageable);
     }
 
@@ -94,10 +107,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog b = blogDao.findById(id).get();
-        if(b==null){
+        if (b == null) {
             throw new NotFoundException("不存在");
         }
-        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
+        BeanUtils.copyProperties(blog, b, MyBeanUtils.getNullPropertyNames(blog));
         b.setUpdateTime(new Date());
         return blogDao.save(b);
     }

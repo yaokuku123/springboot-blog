@@ -42,30 +42,30 @@
             <div class="ui top attached segment">
                 <div class="ui horizontal link list">
                     <div class="item">
-                        <img src="../static/images/head.jpg" class="ui avatar image">
-                        <div class="content"><a href="#" class="header">yorick</a></div>
+                        <img src="../static/images/head.jpg" th:src="@{${blog.user.avatar}}" class="ui avatar image">
+                        <div class="content"><a href="#" class="header" th:text="${blog.user.username}">yorick</a></div>
                     </div>
                     <div class="item">
-                        <i class="calendar icon"></i> 2020-08-02
+                        <i class="calendar icon"></i> <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2020-08-02</span>
                     </div>
                     <div class="item">
-                        <i class="eye icon"></i> 1200
+                        <i class="eye icon"></i> <span th:text="${blog.views}">1200</span>
                     </div>
                 </div>
             </div>
 
             <!--图片-->
             <div class="ui attached segment">
-                <img src="../static/images/temp.jpg" class="ui fluid rounded image">
+                <img src="../static/images/temp.jpg" class="ui fluid rounded image" th:src="@{${blog.firstPicture}}">
             </div>
 
             <!--内容-->
             <div class="ui attached segment">
                 <div class="ui right aligned basic segment">
-                    <div class="ui orange basic label">原创</div>
+                    <div class="ui orange basic label" th:text="${blog.flag}">原创</div>
                 </div>
-                <h2 class="ui centered header">程序员真的是吃青春饭吗？</h2>
-                <div id="content" class="typo  typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+                <h2 class="ui centered header" th:text="${blog.title}">程序员真的是吃青春饭吗？</h2>
+                <div id="content" class="typo  typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large" th:utext="${blog.content}">
 
                     <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
@@ -429,7 +429,7 @@ h5,h6{font-size:1em;}
                 </div>
                 <!--标签-->
                 <div class="m-padded-lr m-padded-tb-large">
-                    <div class="ui basic teal left pointing label">方法论</div>
+                    <div class="ui basic teal left pointing label" th:each="tag:${blog.tags}" th:text="${tag.name}">方法论</div>
                 </div>
                 <!--赞赏-->
                 <div class="ui center aligned basic segment">
@@ -439,11 +439,11 @@ h5,h6{font-size:1em;}
                     <div class="ui orange basic label">
                         <div class="ui images" style="font-size: inherit">
                             <div class="image">
-                                <img src="../static/images/wechat.jpg" class="ui rounded bordered image" style="width: 120px">
+                                <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded bordered image" style="width: 120px">
                                 <div>支付宝</div>
                             </div>
                             <div class="image">
-                                <img src="../static/images/wechat.jpg" class="ui rounded bordered image" style="width: 120px">
+                                <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded bordered image" style="width: 120px">
                                 <div>微信</div>
                             </div>
                         </div>
@@ -457,14 +457,14 @@ h5,h6{font-size:1em;}
                 <div class="ui middle aligned  grid">
                     <div class="eleven wide column">
                         <ui class="list">
-                            <li>作者：</li>
-                            <li>发表时间：</li>
+                            <li>作者：<span th:text="${blog.user.username}"></span></li>
+                            <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}"></span></li>
                             <li>版权声明：</li>
                             <li>公众号转载：</li>
                         </ui>
                     </div>
                     <div class="five wide column">
-                        <img src="../static/images/wechat.jpg" style="width: 110px" class="ui right rounded bordered floated image">
+                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" style="width: 110px" class="ui right rounded bordered floated image">
                     </div>
                 </div>
             </div>
@@ -634,7 +634,7 @@ h5,h6{font-size:1em;}
         <script src="../static/lib/qrcode/qrcode.min.js"></script>
         <script src="../static/lib/waypoints/jquery.waypoints.min.js"></script>
     </th:block>
-    <script>
+    <script th:inline="javascript">
         $(".menu.toggle").click(function () {
             $(".m-item").toggleClass("m-mobile-hide");
         });
@@ -666,8 +666,10 @@ h5,h6{font-size:1em;}
             position: "left center"
         });
 
+        var serurl = "http://192.168.1.106:8080";
+        var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
         var qrcode = new QRCode("qrcode", {
-            text: "http://jindo.dev.naver.com/collie",
+            text: serurl+url,
             width: 110,
             height: 110,
             colorDark : "#000000",
