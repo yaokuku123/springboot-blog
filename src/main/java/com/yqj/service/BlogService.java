@@ -24,6 +24,9 @@ public interface BlogService {
     //分页查询
     Page<Blog> listBlog(Pageable pageable);
 
+    //分页模糊查询
+    Page<Blog> listBlog(Pageable pageable,String query);
+
     //按更新时间查询前几条数据
     List<Blog> listRecommendBlogTop(Integer size);
 
