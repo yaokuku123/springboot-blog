@@ -43,6 +43,7 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.findById(id).get();
     }
 
+    @Transactional
     @Override
     public Blog getAndConvert(Long id) {
         Blog blog = blogDao.findById(id).get();
@@ -52,6 +53,7 @@ public class BlogServiceImpl implements BlogService {
         Blog b = new Blog();
         BeanUtils.copyProperties(blog, b);
         b.setContent(MarkdownUtils.markdownToHtmlExtensions(b.getContent()));
+        blogDao.updateViews(id);
         return b;
     }
 

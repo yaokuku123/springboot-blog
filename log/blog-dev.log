@@ -3356,3 +3356,179 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2020-08-07 19:41:02.581  INFO 14884 --- [http-nio-8080-exec-9] com.yqj.aspect.LogAspect                 : result: redirect:/comments/18
 2020-08-07 19:41:02.585  INFO 14884 --- [http-nio-8080-exec-4] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
 2020-08-07 19:41:02.594  INFO 14884 --- [http-nio-8080-exec-4] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 19:46:06.555  INFO 6556 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 6556 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-07 19:46:06.562 DEBUG 6556 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-07 19:46:06.563  INFO 6556 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-07 19:46:06.680  INFO 6556 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-07 19:46:06.680  INFO 6556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-07 19:46:06.681  INFO 6556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-07 19:46:08.024  INFO 6556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-07 19:46:08.208  INFO 6556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168ms. Found 5 JPA repository interfaces.
+2020-08-07 19:46:09.427  INFO 6556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-07 19:46:09.434  INFO 6556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-07 19:46:09.434  INFO 6556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-07 19:46:09.578  INFO 6556 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-07 19:46:09.578  INFO 6556 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2897 ms
+2020-08-07 19:46:09.834  INFO 6556 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 19:46:09.895  INFO 6556 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-07 19:46:09.998  INFO 6556 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 19:46:10.093  INFO 6556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-07 19:46:10.277  INFO 6556 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-07 19:46:10.281  INFO 6556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-07 19:46:10.305  INFO 6556 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-07 19:46:11.467  INFO 6556 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 19:46:11.479  INFO 6556 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 19:46:11.512  INFO 6556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-07 19:46:12.718  WARN 6556 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 19:46:13.143  INFO 6556 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 19:46:13.309  INFO 6556 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-07 19:46:13.908  INFO 6556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-07 19:46:13.912  INFO 6556 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 8.478 seconds (JVM running for 11.156)
+2020-08-07 19:46:14.134  INFO 6556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 19:46:14.134  INFO 6556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-07 19:46:14.152  INFO 6556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-08-07 19:46:14.543  INFO 6556 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 19:46:14.751  INFO 6556 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 19:46:17.674  INFO 6556 --- [http-nio-8080-exec-3] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='127.0.0.1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 19:46:17.804  INFO 6556 --- [http-nio-8080-exec-3] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:14:23.103  INFO 14288 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 14288 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-07 20:14:23.108 DEBUG 14288 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-07 20:14:23.109  INFO 14288 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-07 20:14:23.238  INFO 14288 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-07 20:14:23.239  INFO 14288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-07 20:14:23.240  INFO 14288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-07 20:14:24.518  INFO 14288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-07 20:14:24.680  INFO 14288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149ms. Found 5 JPA repository interfaces.
+2020-08-07 20:14:25.859  INFO 14288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-07 20:14:25.867  INFO 14288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-07 20:14:25.867  INFO 14288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-07 20:14:25.990  INFO 14288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-07 20:14:25.991  INFO 14288 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2751 ms
+2020-08-07 20:14:26.201  INFO 14288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 20:14:26.254  INFO 14288 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-07 20:14:26.344  INFO 14288 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 20:14:26.423  INFO 14288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-07 20:14:26.542  INFO 14288 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-07 20:14:26.544  INFO 14288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-07 20:14:26.558  INFO 14288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-07 20:14:27.383  INFO 14288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 20:14:27.389  INFO 14288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 20:14:27.413  INFO 14288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-07 20:14:28.521  WARN 14288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 20:14:28.952  INFO 14288 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 20:14:29.122  INFO 14288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-07 20:14:29.717  INFO 14288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-07 20:14:29.721  INFO 14288 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 7.613 seconds (JVM running for 10.268)
+2020-08-07 20:14:36.220  INFO 14288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 20:14:36.222  INFO 14288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-07 20:14:36.251  INFO 14288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2020-08-07 20:14:36.848  INFO 14288 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-08-07 20:14:37.069  WARN 14288 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-07 20:14:37.099  WARN 14288 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-07 20:14:37.111  INFO 14288 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: index
+2020-08-07 20:14:40.276  INFO 14288 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:14:40.347  INFO 14288 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:14:41.184  INFO 14288 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:14:41.248  INFO 14288 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:14:55.507  INFO 14288 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:14:55.518  INFO 14288 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:14:55.947  INFO 14288 --- [http-nio-8080-exec-3] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:14:55.961  INFO 14288 --- [http-nio-8080-exec-3] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:15:14.292  INFO 14288 --- [http-nio-8080-exec-4] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.post', args=[Comment{id=null, nickname='yorick', email='yaoqijun@outlook.com', content='管理员测试', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@74cda623]}
+2020-08-07 20:15:14.352  INFO 14288 --- [http-nio-8080-exec-4] com.yqj.aspect.LogAspect                 : result: redirect:/comments/18
+2020-08-07 20:15:14.366  INFO 14288 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:15:14.377  INFO 14288 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:15:24.578  INFO 14288 --- [http-nio-8080-exec-7] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.post', args=[Comment{id=null, nickname='yorick', email='yaoqijun@outlook.com', content='管理员测试2', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@74cda623]}
+2020-08-07 20:15:24.617  INFO 14288 --- [http-nio-8080-exec-7] com.yqj.aspect.LogAspect                 : result: redirect:/comments/18
+2020-08-07 20:15:24.624  INFO 14288 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:15:24.654  INFO 14288 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:21:41.465  INFO 14864 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 14864 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-07 20:21:41.471 DEBUG 14864 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-07 20:21:41.472  INFO 14864 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-07 20:21:41.581  INFO 14864 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-07 20:21:41.582  INFO 14864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-07 20:21:41.583  INFO 14864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-07 20:21:42.838  INFO 14864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-07 20:21:42.996  INFO 14864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143ms. Found 5 JPA repository interfaces.
+2020-08-07 20:21:44.164  INFO 14864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-07 20:21:44.177  INFO 14864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-07 20:21:44.178  INFO 14864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-07 20:21:44.387  INFO 14864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-07 20:21:44.388  INFO 14864 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2805 ms
+2020-08-07 20:21:44.649  INFO 14864 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 20:21:44.833  INFO 14864 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-07 20:21:45.006  INFO 14864 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 20:21:45.148  INFO 14864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-07 20:21:45.377  INFO 14864 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-07 20:21:45.384  INFO 14864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-07 20:21:45.410  INFO 14864 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-07 20:21:46.137  INFO 14864 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 20:21:46.142  INFO 14864 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 20:21:46.164  INFO 14864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-07 20:21:46.786  WARN 14864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 20:21:46.957  INFO 14864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 20:21:47.029  INFO 14864 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-07 20:21:47.270  INFO 14864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-07 20:21:47.272  INFO 14864 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 6.731 seconds (JVM running for 8.012)
+2020-08-07 20:21:54.945  INFO 14864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 20:21:54.945  INFO 14864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-07 20:21:54.962  INFO 14864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-08-07 20:21:54.997  INFO 14864 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-08-07 20:21:55.284  WARN 14864 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-07 20:21:55.298  WARN 14864 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-07 20:21:55.304  INFO 14864 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: index
+2020-08-07 20:21:58.023  INFO 14864 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:21:58.112  INFO 14864 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:21:59.149  INFO 14864 --- [http-nio-8080-exec-2] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:21:59.227  INFO 14864 --- [http-nio-8080-exec-2] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:22:02.709  INFO 14864 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:22:02.728  INFO 14864 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:22:03.165  INFO 14864 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:22:03.183  INFO 14864 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:22:39.327  INFO 14864 --- [http-nio-8080-exec-4] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:22:39.341  INFO 14864 --- [http-nio-8080-exec-4] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:22:39.821  INFO 14864 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:22:39.844  INFO 14864 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:24:22.373  INFO 456 --- [restartedMain] com.yqj.MainApplication                  : Starting MainApplication on LAPTOP-JUBVGF02 with PID 456 (D:\study\code\project\blog\target\classes started by yorick in D:\study\code\project\blog)
+2020-08-07 20:24:22.378 DEBUG 456 --- [restartedMain] com.yqj.MainApplication                  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-08-07 20:24:22.379  INFO 456 --- [restartedMain] com.yqj.MainApplication                  : The following profiles are active: dev
+2020-08-07 20:24:22.481  INFO 456 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\study\code\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/study/code/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-08-07 20:24:22.482  INFO 456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-07 20:24:22.483  INFO 456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-07 20:24:23.609  INFO 456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-07 20:24:23.755  INFO 456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134ms. Found 5 JPA repository interfaces.
+2020-08-07 20:24:24.921  INFO 456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-07 20:24:24.928  INFO 456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-07 20:24:24.928  INFO 456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-07 20:24:25.038  INFO 456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-07 20:24:25.038  INFO 456 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2555 ms
+2020-08-07 20:24:25.218  INFO 456 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 20:24:25.265  INFO 456 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-07 20:24:25.345  INFO 456 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 20:24:25.410  INFO 456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-07 20:24:25.521  INFO 456 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-07 20:24:25.523  INFO 456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-07 20:24:25.536  INFO 456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-07 20:24:26.247  INFO 456 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 20:24:26.253  INFO 456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 20:24:26.275  INFO 456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-07 20:24:26.907  WARN 456 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 20:24:27.086  INFO 456 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 20:24:27.160  INFO 456 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-07 20:24:27.471  INFO 456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-07 20:24:27.473  INFO 456 --- [restartedMain] com.yqj.MainApplication                  : Started MainApplication in 5.943 seconds (JVM running for 8.286)
+2020-08-07 20:24:30.056  INFO 456 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 20:24:30.056  INFO 456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-07 20:24:30.076  INFO 456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-08-07 20:24:30.470  INFO 456 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:24:30.740  INFO 456 --- [http-nio-8080-exec-1] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:24:32.605  INFO 456 --- [http-nio-8080-exec-3] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:24:32.695  INFO 456 --- [http-nio-8080-exec-3] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:24:39.540  INFO 456 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:24:39.556  INFO 456 --- [http-nio-8080-exec-6] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:24:40.452  INFO 456 --- [http-nio-8080-exec-7] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:24:40.486  INFO 456 --- [http-nio-8080-exec-7] com.yqj.aspect.LogAspect                 : result: blog::commentList
+2020-08-07 20:24:42.916  INFO 456 --- [http-nio-8080-exec-9] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/blog/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.IndexController.blog', args=[18, {}]}
+2020-08-07 20:24:42.941  INFO 456 --- [http-nio-8080-exec-9] com.yqj.aspect.LogAspect                 : result: blog
+2020-08-07 20:24:43.362  INFO 456 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : RequestLog: RequestLog{url='http://localhost:8080/comments/18', ip='0:0:0:0:0:0:0:1', classMethod='com.yqj.controller.CommentController.comments', args=[18, {}]}
+2020-08-07 20:24:43.381  INFO 456 --- [http-nio-8080-exec-8] com.yqj.aspect.LogAspect                 : result: blog::commentList
