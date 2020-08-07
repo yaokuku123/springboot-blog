@@ -40,140 +40,82 @@
                         <h3 class="ui header teal">分类</h3>
                     </div>
                     <div class="right aligned column">
-                        共<h2 class="ui orange header m-inline-block m-text-thin">14</h2>个
+                        共<h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(types)}">14</h2>个
                     </div>
                 </div>
             </div>
 
             <div class="ui attached segment m-padded-tb-large">
-                <div class="ui labeled button m-margin-tb-tiny">
-                    <a href="#" class="ui basic teal button">思考</a>
-                    <div class="ui basic teal left pointing label">24</div>
-                </div>
-                <div class="ui labeled button m-margin-tb-tiny">
-                    <a href="#" class="ui basic button">思考</a>
-                    <div class="ui basic left pointing label">24</div>
+                <div class="ui labeled button m-margin-tb-tiny" th:each="type:${types}">
+                    <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId}?'teal'" th:text="${type.name}">思考</a>
+                    <div class="ui basic left pointing label" th:classappend="${type.id==activeTypeId}?'teal'" th:text="${#arrays.length(type.blogs)}">24</div>
                 </div>
             </div>
 
             <!--博客列表-->
             <div class="ui top attached teal segment">
-                <div class="ui padded vertical segment m-padded-tb-large m-mobile-lr-clear">
+                <div class="ui attached segment">
+                    <!--content-->
+                    <div class="ui padded vertical segment m-padded-tb-large" th:each="blog:${page.content}">
+                        <div class="ui middle aligned mobile reversed stackable grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">
+                                    <a class="m-black" href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank"
+                                       th:text="${blog.title}">你真的理解自由么？</a>
+                                </h3>
+                                <p class="m-text" th:text="|${blog.description}.....|">
+                                    解决引进缓存时会遇到的问题（缓存雪崩、穿透、击穿、数据一致性等问题），并且通过面向切边编程技术将缓存织入业务代码</p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="../static/images/head.jpg" class="ui avatar image"
+                                                     th:src="@{${blog.user.avatar}}">
+                                                <div class="content"><a href="#" class="header"
+                                                                        th:text="${blog.user.username}">yorick</a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i> <span
+                                                    th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2020-08-02</span>
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> <span th:text="${blog.views}">1200</span>
+                                            </div>
+                                        </div>
 
-                    <div class="ui mobile reversed stackable grid">
-                        <div class="eleven wide column">
-                            <h3 class="ui header">你真的理解自由么？</h3>
-                            <p class="m-text">解决引进缓存时会遇到的问题（缓存雪崩、穿透、击穿、数据一致性等问题），并且通过面向切边编程技术将缓存织入业务代码</p>
-                            <div class="ui stackable grid">
-                                <div class="eleven wide column">
-                                    <div class="ui mini horizontal link list">
-                                        <div class="item">
-                                            <img src="../static/images/head.jpg" class="ui avatar image">
-                                            <div class="content"><a href="#" class="header">yorick</a></div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="calendar icon"></i> 2020-08-02
-                                        </div>
-                                        <div class="item">
-                                            <i class="eye icon"></i> 1200
-                                        </div>
                                     </div>
-
-                                </div>
-                                <div class="right aligned five wide column">
-                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                           class="ui teal basic label m-padded-tiny m-text-thin"
+                                           th:text="${blog.type.name}">认知升级</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="five wide column">
-                            <a href="#" target="_blank">
-                                <img src="../static/images/temp.jpg" alt="" class="ui rounded image">
-                            </a>
+                            <div class="five wide column">
+                                <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+                                    <img src="../static/images/temp.jpg" alt="" class="ui rounded image"
+                                         th:src="@{${blog.firstPicture}}">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="ui padded vertical segment m-padded-tb-large m-mobile-lr-clear">
-                    <div class="ui mobile reversed stackable grid">
-                        <div class="eleven wide column">
-                            <h3 class="ui header">你真的理解自由么？</h3>
-                            <p class="m-text">解决引进缓存时会遇到的问题（缓存雪崩、穿透、击穿、数据一致性等问题），并且通过面向切边编程技术将缓存织入业务代码</p>
-                            <div class="ui stackable grid">
-                                <div class="eleven wide column">
-                                    <div class="ui mini horizontal link list">
-                                        <div class="item">
-                                            <img src="../static/images/head.jpg" class="ui avatar image">
-                                            <div class="content"><a href="#" class="header">yorick</a></div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="calendar icon"></i> 2020-08-02
-                                        </div>
-                                        <div class="item">
-                                            <i class="eye icon"></i> 1200
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="right aligned five wide column">
-                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
-                                </div>
-                            </div>
+                <!--bottom-->
+                <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
+                    <div class="ui middle two column grid">
+                        <div class="column">
+                            <a href="#" th:href="@{/(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
                         </div>
-
-                        <div class="five wide column">
-                            <a href="#" target="_blank">
-                                <img src="../static/images/temp.jpg" alt="" class="ui rounded image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="ui padded vertical segment m-padded-tb-large m-mobile-lr-clear">
-                    <div class="ui mobile reversed stackable grid">
-                        <div class="eleven wide column">
-                            <h3 class="ui header">你真的理解自由么？</h3>
-                            <p class="m-text">解决引进缓存时会遇到的问题（缓存雪崩、穿透、击穿、数据一致性等问题），并且通过面向切边编程技术将缓存织入业务代码</p>
-                            <div class="ui stackable grid">
-                                <div class="eleven wide column">
-                                    <div class="ui mini horizontal link list">
-                                        <div class="item">
-                                            <img src="../static/images/head.jpg" class="ui avatar image">
-                                            <div class="content"><a href="#" class="header">yorick</a></div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="calendar icon"></i> 2020-08-02
-                                        </div>
-                                        <div class="item">
-                                            <i class="eye icon"></i> 1200
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="right aligned five wide column">
-                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="five wide column">
-                            <a href="#" target="_blank">
-                                <img src="../static/images/temp.jpg" alt="" class="ui rounded image">
-                            </a>
+                        <div class="right aligned column">
+                            <a href="#" th:href="@{/(page=${page.number}+1)}" th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!--bottom-->
-            <div class="ui bottom attached segment">
-                <div class="ui middle two column grid">
-                    <div class="column">
-                        <a href="#" class="ui mini teal basic button">上一页</a>
-                    </div>
-                    <div class="right aligned column">
-                        <a href="#" class="ui mini teal basic button">下一页</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
     </div>
