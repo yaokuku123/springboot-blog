@@ -28,6 +28,9 @@ public interface TypeService {
     //查询全部
     List<Type> listType();
 
+    //按博客数量查询前几条数据
+    List<Type> listTypeTop(Integer size);
+
     //改
     Type updateType(Long id ,Type type);
 

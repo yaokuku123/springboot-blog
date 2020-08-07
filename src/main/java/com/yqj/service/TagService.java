@@ -32,6 +32,9 @@ public interface TagService {
     //依据一组id字符串查询Tag
     List<Tag> listTag(String ids);
 
+    //根据博客数量查询前几条数据
+    List<Tag> listTagTop(Integer size);
+
     //改
     Tag updateType(Long id ,Tag tag);
 

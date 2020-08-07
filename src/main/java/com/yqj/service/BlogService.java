@@ -21,6 +21,12 @@ public interface BlogService {
     //分页条件查询
     Page<Blog> listBlog(Pageable pageable, BlogQuery blog);
 
+    //分页查询
+    Page<Blog> listBlog(Pageable pageable);
+
+    //按更新时间查询前几条数据
+    List<Blog> listRecommendBlogTop(Integer size);
+
     Blog saveBlog(Blog blog);
 
     Blog updateBlog(Long id,Blog blog);
