@@ -52,7 +52,17 @@ public class Blog {
     @Transient
     private String tagIds;
 
+    private String description;
+
     public Blog() {
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getTagIds() {

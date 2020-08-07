@@ -5,6 +5,7 @@ import com.yqj.domain.Blog;
 import com.yqj.domain.BlogQuery;
 import com.yqj.domain.Type;
 import com.yqj.handler.NotFoundException;
+import com.yqj.utils.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -64,13 +65,9 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
-        if (blog.getId() == null){
-            blog.setCreateTime(new Date());
-            blog.setUpdateTime(new Date());
-            blog.setViews(0);
-        }else {
-            blog.setUpdateTime(new Date());
-        }
+        blog.setCreateTime(new Date());
+        blog.setUpdateTime(new Date());
+        blog.setViews(0);
         return blogDao.save(blog);
     }
 
@@ -81,7 +78,8 @@ public class BlogServiceImpl implements BlogService {
         if(b==null){
             throw new NotFoundException("不存在");
         }
-        BeanUtils.copyProperties(blog,b);
+        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
+        b.setUpdateTime(new Date());
         return blogDao.save(b);
     }
 
