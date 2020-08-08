@@ -30,4 +30,12 @@ public interface BlogDao extends JpaRepository<Blog,Long>, JpaSpecificationExecu
     @Modifying
     @Query("update Blog b set b.views=b.views+1 where b.id=?1")
     int updateViews(Long id);
+
+    //倒序查询年份
+    @Query("select function('date_format',b.updateTime,'%Y') as year from Blog b group by function('date_format',b.updateTime,'%Y') order by year desc ")
+    List<String> findGroupYear();
+
+    //根据年份获取博客数据
+    @Query("select b from Blog b where function('date_format',b.updateTime,'%Y')=?1")
+    List<Blog> findByYear(String year);
 }

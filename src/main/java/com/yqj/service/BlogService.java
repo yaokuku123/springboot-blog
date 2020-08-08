@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Copyright(C),2019-2020,XXX公司
@@ -35,6 +36,12 @@ public interface BlogService {
 
     //按更新时间查询前几条数据
     List<Blog> listRecommendBlogTop(Integer size);
+
+    //按年份查找每个年份的博客数据集合
+    Map<String,List<Blog>> archiveBlog();
+
+    //博客数目
+    Long countBlog();
 
     Blog saveBlog(Blog blog);
 
