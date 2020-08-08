@@ -30,6 +30,9 @@ public interface BlogService {
     //分页模糊查询
     Page<Blog> listBlog(Pageable pageable,String query);
 
+    //根据标签id查询
+    Page<Blog> listBlog(Pageable pageable,Long tagId);
+
     //按更新时间查询前几条数据
     List<Blog> listRecommendBlogTop(Integer size);
 
