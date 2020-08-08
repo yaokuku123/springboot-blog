@@ -36,7 +36,7 @@
             <div class="ui stackable grid">
                 <div class="eleven wide column">
                     <div class="ui segment">
-                        <img src="../static/images/temp.jpg" class="ui rounded image">
+                        <img src="../static/images/temp.jpg" th:src="#{about.picture}" class="ui rounded image">
                     </div>
                 </div>
                 <div class="five wide column">
@@ -44,28 +44,31 @@
                         <div class="ui header">关于我</div>
                     </div>
                     <div class="ui attached segment">
-                        <p class="m-text">文字</p>
-                        <p class="m-text">文字</p>
+                        <p class="m-text" th:text="#{about.introduce}">文字</p>
                     </div>
                     <div class="ui attached segment">
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">吃饭</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">唱歌</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">看电影</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">打豆豆</div>
                     </div>
                     <div class="ui attached segment">
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">java</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">java</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">java</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">java</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">SpringBoot</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Docker</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">MySQL</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">HTML CSS JavaSript</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">C/C++</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Python</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">MATLAB</div>
                     </div>
                     <div class="ui bottom attached segment">
-                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" th:href="@{https://github.com/yaokuku123}" target="_blank" class="ui circular icon button"><i class="github icon"></i></a>
                         <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
                         <a href="#" class="ui qq circular icon button" data-content="767453835" data-position="bottom center"><i class="qq icon"></i></a>
                     </div>
                     <div class="ui wechatQ flowing popup transition hidden">
-                        <img src="../static/images/wechat.jpg" class="ui rounded image" style="width: 110px">
+                        <img src="../static/images/wechat.jpg" th:src="@{#{main.weichatImg}}" class="ui rounded image" style="width: 110px">
                     </div>
                 </div>
             </div>

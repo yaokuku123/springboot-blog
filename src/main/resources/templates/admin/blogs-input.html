@@ -75,7 +75,7 @@
                     <div class="required field">
                         <div class="ui left labeled input">
                             <label class="ui compact teal basic label">分类</label>
-                            <div class="ui fluid selection dropdown">
+                            <div class="ui type fluid selection dropdown">
                                 <input type="hidden" name="type.id" th:value="*{type}!=null?*{type.id}">
                                 <i class="dropdown icon"></i>
                                 <div class="default text">分类</div>
@@ -265,6 +265,7 @@
             $("[name='published']").val(true);
             $("#blog-form").submit();
         });
+
     </script>
     </body>
 </html>

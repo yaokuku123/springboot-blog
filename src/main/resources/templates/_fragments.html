@@ -46,7 +46,7 @@
                     <div class="three wide column">
                         <div class="ui inverted link list">
                             <div class="item">
-                                <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded image" style="width: 110px">
+                                <img src="../static/images/wechat.jpg" th:src="@{#{main.weichatImg}}" class="ui rounded image" style="width: 110px">
                             </div>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                         <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
                         <div class="ui inverted link list">
                             <a href="#" class="item" th:text="#{fragments.email}">Email：yaoqijun@outlook.com</a>
-                            <a href="#" class="item">WeChat：yao767453835</a>
-                            <a href="#" class="item">QQ：767453835</a>
+                            <a href="#" class="item" th:text="#{fragments.weichat}">WeChat：yao767453835</a>
+                            <a href="#" class="item" th:text="#{fragments.qq}">QQ：767453835</a>
                         </div>
                     </div>
                     <div class="three wide column">
@@ -68,12 +68,13 @@
                     </div>
                     <div class="seven wide column">
                         <h4 class="ui inverted header m-text-thin m-text-spaced">留言</h4>
-                        <p class="m-text-thin m-text-spaced m-opacity-mini">
-                            这是我的个人博客，会实时分享编程、写作、思考、相关的任何内容，希望对来到这里的人有所帮助~</p>
+                        <p class="m-text-thin m-text-spaced m-opacity-mini" th:text="#{fragments.message}">
+                            这是我的个人博客，会实时分享编程、写作、思考、相关的任何内容，希望对来到这里的人有所帮助~
+                        </p>
                     </div>
                 </div>
                 <div class="ui inverted section divider"></div>
-                <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 Designed by Yorick</p>
+                <p class="m-text-thin m-text-spaced m-opacity-tiny" th:text="#{fragments.copyRight}">Copyright © 2019 - 2020 Designed by Yorick</p>
             </div>
         </footer>
 
