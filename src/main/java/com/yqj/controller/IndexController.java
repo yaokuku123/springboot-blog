@@ -57,4 +57,9 @@ public class IndexController {
         return "blog";
     }
 
+    @GetMapping("/footer/newblog")
+    public String newblog(Model model){
+        model.addAttribute("newblogs",blogService.listRecommendBlogTop(3));
+        return "_fragments::newblogList";
+    }
 }
